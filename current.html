@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabcuts</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+  <style type="text/css">
+  body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff1744;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #d32f2f;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #f5f0e6;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: left+;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+} 
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+  text-align: left;
+}
+
+*{
+    text-align: center;
+}
+.carousel-inner{
+   background-size: contain;
+    padding: 50px 0px;
+
+}
+.carousel-caption h1 {
+  font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    padding-bottom: 14px;
+  }
+
+  .download_area {
+    background: #f1f1f1;
+    padding: 100px 0px;
+  }
+  
+  .download_area .download_inner {
+    text-align: center;
+    max-width: 945px;
+    margin: auto;
+  }
+  
+  .download_area .download_inner h4 {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #222222;
+    padding-bottom: 14px;
+  }
+  
+  .download_area .download_inner h3 {
+    font-size: 48px;
+    color: #f8395d;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 14px;
+    font-weight: 400;
+     
+      text-transform: capitalize;
+      margin: 0;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px
+  
+  }
+  
+  .download_area .download_inner p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #696969;
+    font-family: "Lato", sans-serif;
+    padding: 35px 0px 30px 0px;
+  }
+  
+  .download_area .download_inner a + a {
+    margin-left: 6px;
+  }
+  
+  .download_area.purple_dd .download_inner h3 {
+    color: #104E8B; /* change */
+  }
+  
+  .download_area img{
+      width:30%;
+      margin-left:8%; 
+  }  
+
+
+  .drag{
+    padding: top 100px; 
+    margin-top: 2.5rem;
+    background-color: lightgray
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .feedback{
+   min-height: 770px;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+  }
+  #form-contact{
+    font-size: 48px;
+    color: #3966f8;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 14px;
+    font-weight: 400;
+     text-transform: capitalize;
+      margin: 0;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px
+  
+  
+  }
+  
+  #rname, #email, #submit, textarea{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  
+  }
+  
+  #rname, #email, textarea{
+    width:80%
+  }
+  #submit {
+    padding: 15px;
+    background-color: white;
+    font-weight: bold;
+  
+  }
+  #submit:hover{
+    cursor:pointer;
+    background-color: pink;
+    color: black;
+    border: 2px solid white;
+  
+  }
+  #rname:focus, #email:focus, textarea:focus{
+    background-color: #d9d9d9;
+    color: black;
+    border: 2px solid white;
+  }
+
+  .footer_area {
+    background: #313238;
+  }
+  
+  .footer_area .pull-left h4 {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    line-height: 80px;
+    font-weight: 400;
+  }
+  
+  .footer_area .pull-left h4 a {
+    color: #f8395d;
+  }
+  
+  .footer_area .pull-right ul li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  .footer_area .pull-right ul li a {
+    font-family: 14px;
+    font-family: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    line-height: 80px;
+    color: #fff;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+  }
+  
+  .footer_area .pull-right ul li:first-child {
+    margin-left: 0px;
+  }
+  
+  .footer_area .pull-right ul li:hover a {
+    color: #9FB6CD; /* change */
+  }
+  
+  .footer_area.purple_footer .pull-left h4 a {
+    color: #9FB6CD; /* change */
+  }
+  
+  .footer_area.purple_footer .pull-right ul li:hover a {
+    color: #a640d0;
+  }
+  
+  /*---------------------------------------------------- */
+  
+  /* custome style */
+  
+  .privacy_area_section{
+    margin-top: 100px;
+    background: #f1f1f1;
+    padding: 100px;
+  }
+  
+  .privacy_area_section p{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #104E8B;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  
+  .privacy_content_area {
+    background: #fff;
+    padding: 50px 0px;
+  }
+  
+  .content_format{
+      font-size: 16px;
+      line-height: 30px;
+      font-family: "Lato", sans-serif;
+      color: #696969;
+  }
+
+  @media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+ +
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+</style>
+
+
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+
+          <div class="navbar-brand">
+            <a href="current.html"  ><h1>Fabcuts</h1></a>
+            
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        
+        <a class="nav-item nav-link active" href="#about">About</a>
+        <a class="nav-item nav-link" href="#download">Download</a>
+        <a class="nav-item nav-link" href="#feedback">feedback</a>
+        </ul>
+    </div>
+  </div></nav></header>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h2>FabCuts</h2>
+            <p>No Need to wait in the queue anymore!<br>Just book your favourite salon's knowing the correct waiting time. </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="right_side_feature">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="lnr lnr-enter-down"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">
+                                    <h3>No Wait Anymore</h3>
+                                </a>
+                                <p>Now customers don't have to wait in salon for their turn.They only have to book their favorite salon from the comfort of their home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_side_feature">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="lnr lnr-phone-handset"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">
+                                    <h4>Hygenic Salon</h4>
+                                </a>
+                                <p>For us, giving hygienic and sanitized salon services to our loyal customers is our top most priority.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_side_feature">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="lnr lnr-cog"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">
+                                    <h4>Deals And Discounts</h4>
+                                </a>
+                                <p>We do our best to provide you awesome services at minimum price possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="right_side_feature">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="lnr lnr-list"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">
+                                    <h4>Memberships</h4>
+                                </a>
+                                <p>These are the most exciting plans which helps you to get most of discounts from barbers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <section class="download_area purple_dd" id="download">
+    <div class="container">
+        <div class="download_inner">
+            <h3 id="download">Get the app for android </h3>
+            <h3>Download Fabcuts App Now</h3>
+            <p>Find out best barber nearest to you and book appointment online. Now, no need to wait in queue as you can check quelist and waiting time from app.
+            </p>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.fabcuts" target="_blank">
+                <img src="http://barberq.in/assets/barberq/img/download-2.png" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+ <section class="map_area purple_map" id="contact">
+        <div class="contact_info">
+            <div class="container">
+            <div class="main_title purple_title">
+                <h3>Have a query?? Feel free to contact us!</h3>
+            </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-md-offset-3">
+                        <div class="contact_form_left">
+                            <div class="row">
+                                <form class="comment_form_inner" action="contact_process.php" method="post" id="contactForm">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Phone No.">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-default submit_btn purple_submit" type="submit">Send</button>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_area purple_footer">
+    <div class="container">
+        <div class="pull-left">
+            <h4>
+                <p> &copy; Copyright @2020</p>
+            </h4>
+        </div>
+        <div class="pull-right">
+            <ul>
+                <li>
+                    <a href="http://barberq.in#home">Home</a>
+                </li>
+                <li>
+                    <a href="http://barberq.in#home">About</a>
+                </li>
+                <li>
+                    <a href="/privacy">Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+       
+      
+</body>
+</html>
